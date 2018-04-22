@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<script type="text/javascript" src="js/ajax.js"></script>
+<title>易简谱 Easy-Jianpu Trans</title>
+</head>
+
+<body>
+<div class="container top">
+    <div class="row head" id="fix-top">
+        <div class="col-xs-4">
+       <!-- width:105px; height:31px;-->
+            <img class="logo" src="img/logo-top.png"/>
+        </div>
+        <div class="col-xs-8 head-column">
+            <a class="to-head" href="#">首页</a>
+            <a class="to-howToUse" href="#" >使用说明</a>
+            <a class="to-download-links" href="#" >下载地址</a>
+            <a class="to-feedback" href="#" >反馈/建议</a><!-- zhihu wechat qq -->
+            <a href="feedback_donation.html#howToUse">赞赏￥</a>
+        </div>
+    </div>
+    <!--/*大图*/-->
+    <div class="row" id="to-fix-top">
+        <div class="col-xs-12 carouse">
+            <div id="myCarousel" class="carousel slide"> 
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <!-- <li data-traget="#myCarousel" data-slide-to="3"></li> -->
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active"> 
+                        <!--width:100%; min-width:1280px;  min-height:750px;-->
+                        <img src="img/nav-img1.jpg" alt="First slide">
+                        <div class="carousel-caption">软件界面</div>
+                    </div>
+                    <div class="item"> 
+                        <img src="img/nav-img2.jpg"  alt="Second slide">
+                        <div class="carousel-caption">Step 1:打开简谱图片</div>
+                    </div>
+
+                    <div class="item"> 
+                        <img src="img/nav-img3.jpg"  alt="Third slide">
+                        <div class="carousel-caption">Step 2:设置简谱原调与转调，导出结果</div>
+                    </div>
+
+                    <!-- <div class="item">
+                        <img src="img/nav-img4.jpg" alt="Fourth slide">
+                        <div class="carousel-caption">Step 4:导出结果 </div>
+                    </div> -->
+
+                </div>
+                <!-- 轮播（Carousel）导航 --> 
+                <a class="carousel-control left" href="#myCarousel"  data-slide="prev">&lsaquo;</a> 
+                <a class="carousel-control right" href="#myCarousel"  data-slide="next">&rsaquo;</a>
+           </div>
+        </div>
+
+    </div>
+    <!-- 软件标题 -->
+    <div class="row mid-Title">
+        <div class="col-xs-12 "> 
+            <h1 class="text-center">简谱转调软件（易简谱Easy-Jianpu Trans）</h1>
+        </div>
+    </div>
+    <h1 id="howToUse"></h1>
+</div>
+
+<div class="container" >
+    
+    <div class="row content" >
+        <div class="col-xs-8 col-xs-offset-2 content-mid">
+            <!--项目开始-->
+            <div class="content-item">
+                <h2>说明</h2>
+                <div>
+                    <p>从网上下载的简谱的调性经常与我们的乐器的调性不同，这时就需要进行转调操作（能直接在脑海中完成转调的大神请忽略）。如半音口琴太多为C调，而从网上下载的简谱大多为非C调，这个时候就需要将简谱改为C调。虽然可根据乐理知识手动推算转换为我们想要的调性，但非常耗时且麻烦。网上搜索简谱转调软件未果，索性就自己编写了一个。</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <p>暂命名为：“简谱转调工具  Easy-Jianpu Trans”。</p>
+                            </li>
+                             <li>
+                                <p>使用简介：输入简谱图片，选择曲谱原调和希望转出的调，然后导出转调后的结果。（结果为图片，保留了原节奏和歌词等信息） </p>
+                            </li>
+                            <!--<li>
+                                 <p> copy right: </p> 
+                            </li>-->
+
+                        </ul>
+                    </div>
+
+                </div> 
+                
+            </div>
+            <!--项目结束-->
+
+             <!--项目开始 使用步骤-->
+            <div class="content-item">
+                <h2>使用教程</h2>
+                <h3>1、双击打开软件</h3>
+                <p>此时工具栏中所有的按钮均为灰色</p>
+                <img width="600px" height="330px" src="img/software-onstart.jpg"/>
+
+                <h3>2、输入简谱图片 </h3>
+                <p>选择 文件--打开简谱图片</p>
+                <img width="600px" height="330px" src="img/software-openImg.jpg"/>
+                <p></p>
+                <p>这里打开的样例简谱图片为<a target="new" href="http://www.ktvc8.com/article/article_494030_1.html">[link]</a>：</p>
+                <img src="img/chengdu.jpg"/>
+
+                <h3>3、原调与转出调的设置  </h3>
+                <p>导入图片之后，工具栏中部分按钮变为可用状态</p>
+                <img width="600px" height="330px" src="img/software-toneSet.jpg"/>
+                <p>“原调”与“转调”设置好后，此时还不能导出转调后的结果 ，需要对原简谱进行识别。</p>
+                <p>点击绿色的“识别”按钮，对原简谱进行识别。</p>
+                <img width="600px" height="330px" src="img/software-onreco.jpg"/>
+
+                <h3>4、转调后的简谱的导出</h3>
+                <p>点击工具栏的“导出”按钮，将会弹出保存文件对话框，选择保存路径保存即可！</p>
+                <img width="600px" height="330px" src="img/software-onsave.jpg"/>
+                <p>下图即为转调后的结果。</p>
+                <img src="img/chengdu-result.jpg"/>
+
+                <h3>5、重要：错误识别的修改</h3>
+                <p>通过前面的步骤，进行转调时，<b>首先要进行图像中音符的识别</b>。</p>
+                <p><b>而识别的准确度，直接影响了转调后的简谱的正确性</b>。而目前任意一种图像识别算法都不可能做到 100 % 的准确。（上面的简谱转调的例子的识别结果完全正确， ^_^|||    ）</p>
+                <p>大家注意到在“导出”按钮左侧的“修正”按钮。</p>
+                <p>另外打开一张简谱，重复以上步骤1-3，然后点击“修正”按钮。</p>
+                <img width="600px" height="330px" src="img/software-onModi.jpg"/>
+                <p>这时将会弹出修正简谱界面，如下。每个音符的识别结果，将会在音符的正上方以红色字体显示。</p>
+                <img src="img/software-onModi-preview.jpg"/>
+                <p>注意到第二行的，高音1被错误识别为中音1，需要进行修正。</p>
+                <p>用鼠标左键点击识别错误的1（选中后，识别的音符将变为蓝色）。此时将弹出修改对话框，如下。</p>
+                <img src="img/software-onModi-modi.jpg"/>
+                <p>在修改对框，在下拉框中将“中音”改为高音。然后点确定。即可修改完成，修改结果如下。</p>
+                <img src="img/software-onModi-modiResult.jpg"/>
+                <p>另外，注意到第二行的“#5”旁边多出来一个中音“4”，需要将其删除。</p>
+                <p>鼠标左键选中这个“4”，在弹出的修改对话框中先中“删除”，然后点“确定”按钮。这个多出来的4就被删除了！右边多出来的4也可按照同样方法删除！</p>
+                <img src="img/software-onModi-del.jpg"/>
+                <p>删除后,结果如下</p>
+                <img src="img/software-onModi-del-result.jpg"/>
+                <p>这样修改完成，确定没有错误就可以将转调结果导出了（导出见步骤4）</p>
+            </div>
+            <!--项目结束-->
+
+
+        </div>
+        
+
+        <!-- 右边可能会有菜单 -->
+        <div class="col-xs-2 content-right">        </div>
+
+    </div>
+
+  <div class="row content" >
+        <div class="col-xs-8 col-xs-offset-2 content-mid" id="nodate-scanning">
+            <!--项目开始-->
+            <div class="content-item donate-scanning">
+                <h2>❤ 感谢各位可爱的小伙伴们的慷慨赞赏 ❤ </h2>
+                <img width="300px" height="300px" src="img/scanning-wechat.jpg"/>
+                <img width="300px" height="300px" src="img/scanning-alipay.jpg" />
+                
+                
+            </div>
+            <!--项目结束-->
+
+        </div>
+    </div>
+
+  <div class="row content " id="download-links">
+        <div class="col-xs-8 col-xs-offset-2 content-mid">
+            <!--项目开始-->
+            <div class="content-item">
+                <h2>下载地址列表</h2>
+                
+            </div>
+            <!--项目结束-->
+
+        </div>
+        
+
+        <!-- 右边可能会有菜单 -->
+        <div class="col-xs-2 content-right">        </div>
+
+    </div>
+    
+    
+     <div class="row footer" id="feedback">
+        <div class="col-xs-9 ">
+            <div class="row footer-img">
+                <div class="col-xs-12 contact">
+                    <ul class="">
+                        <li><a href="#">反馈建议：</a></li>
+                        <li>还可以：</li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul class="">
+                        <li>
+                            【方式1】：<a href="#">知乎文章地址</a>； 【方式2】：扫描右侧二维码，关注微信公众号，回复 易简谱+反馈内容
+                        </li>
+                        <li>QQ群：694595504</li>
+                        <li>微信公众号：渐宽书苑</a></li>
+                    </ul>
+                </div>
+            </div>
+
+      </div>
+
+      <div class="col-xs-3 scanning">
+            <img src="img/scanning.jpg"/>
+      </div>
+     
+   </div>
+   <div class="row footer-black">
+        <div class="col-xs-12">
+            <p>Copyright ©  装载请注明出处 </p>
+        </div>
+   </div>
+   
+   
+  
+</div>
+
+
+</body>
+</html>

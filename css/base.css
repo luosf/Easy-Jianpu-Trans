@@ -1,0 +1,91 @@
+/*本文件用作 index.html和home.html文件*/
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: black; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: black; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #999; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: black; 
+} 
+/* index.html */
+*{ font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei";font-size:18px;}
+body{ font-family:'Microsoft YaHei'; padding-bottom:0px !important; background:#F0F5FB; font-size:16px;  padding-bottom:55px; }
+span{ font-size:12px; font-weight:normal;}
+a{ color:black;}
+.dillditail-content .btn{ font-size:8px;  padding:1px; margin:2px; display:block;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;/*color:#00CC66;*/ color:#CCC;}
+a:active {text-decoration: none;}
+ul li{ text-decoration:none; list-style-type:none; list-style:none;}
+.container{ background:white; width:1165px;}
+
+/*大顶部*/
+.top{ width:100%; min-width:1080px; position: relative;}
+/*顶部*/
+#fix-top{ position:fixed; min-width:1080px; top:0px; z-index:999;}
+#to-fix-top{ margin-top:52px;}
+.head{ padding:10px; background:#19100A; width:100%;}
+.head a{ color:white;}
+.head a:hover{ color:gray;}
+.logo{ width:170px; height:31px; -webkit-filter: invert(1);
+     -moz-filter: invert(1);
+     -o-filter: invert(1);
+     -ms-filter: invert(1);
+     filter: invert(1); }
+.head-column a{ font-size:16px; line-height:33px; margin-left:5%;}
+.search .input-group input{ border:#ccc solid 2px; border-radius:7px;}
+.search .input-group span{  border:#gray solid 2px; border-radius:0px; /*background:black;*/ background:url(../img/search-icon.png) no-repeat rgba(204,204,204,0.8); background-size:50% 50%; background-position:center; color:white; font-size:16px; border-radius:00px 7px 7px 0px;}
+/*轮播代码*/
+.carouse{ padding:0px; position: relative;}
+.carousel-indicators{ bottom: 70px;}
+.carousel-caption{bottom: 100px;}
+.item img{ width:100%; min-width:1280px;min-height:720px;}
+.carousel-control{ font-size:100px; line-height:780px; color:#ccc;
+background-image: linear-gradient(to right,rgba(0,0,0,.000000) 0,rgba(0,0,0,.000000) 100%) !important;
+}
+
+/*Title*/
+.mid-Title{ padding:0px 25px; position: absolute; bottom: 10px; color:white; width: 100%; }
+.mid-Title div h1 {font-size: 30px; font-weight: bold;}
+#howToUse{position: absolute; bottom: 110px;}
+/*content*/
+.content{ }
+.content-mid{ padding:0px 0px;}
+.content-item{ height:auto; position:relative;zoom:1; margin-left:15px; margin-bottom:25px;}
+.content-item h2{font-weight: bold; font-size: 22px; color:black; position: relative; right: 10px;}
+.content-item h3{font-weight: bold; font-size: 20px; color:black; position: relative; right: 8px;}
+.content-item p{ line-height:35px; color:#1a1a1a;}
+.content-item div ul li{list-style-type:circle;}
+.content-item a{color: gray; font-size: 14px;}
+
+.donate-scanning img{display: inline;}
+
+.content-right h6{ border:solid gray 1px; padding:1px; text-align:center; width:150px;}
+/*footer*/
+.footer{ margin-top:100px; padding:40px; padding-top:5px; padding-bottom:5px; text-align:center;/* background:#19100A;*/ background:url(../img/footer.png) no-repeat; background-size:100% 100%; color:white;}
+.footer-img{ border-bottom:solid 2px white;}
+.scanning img{ width:140px; height:140px; position:relative; top:20px;}
+.contact{ margin-top:10px;}
+.contact ul{ float:left;text-align:left;  line-height:25px;}
+.contact ul li{font-size:14px; color: white;}
+.contact ul li a{color:white; font-size:14px; }
+.footer-black{ background: #221E1D; height:50px; }
+.footer-black div p{ color: white; margin:0px; margin-left:75px; line-height:50px; font-size:16px; text-align:center;}
+
+/*弹出框*/
+.send{ display:none; position:fixed; top:100px; right:500px; background:white; padding:5px;}
+.send >a{ float:right; margin-right:12px; margin-top:5px;}
+
+.beforedill{ background:white; display:none; border:solid 1px gray; padding:5px;  width:300px; height:150px;text-align:center; position:fixed; top:250px; left:500px;}
+.beforedill p a{ margin:20px; background:black; color:white; padding:2px 5px;}
+.beforedill p a:hover{color:gray;}
+
+.login-footer{ position:absolute; width:100%; top:600px;}
+
+
+
