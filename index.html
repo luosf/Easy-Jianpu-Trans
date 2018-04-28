@@ -47,16 +47,16 @@
                     <div class="item active"> 
                         <!--width:100%; min-width:1280px;  min-height:750px;-->
                         <img src="img/nav-img1.jpg" alt="First slide">
-                        <div class="carousel-caption">软件界面</div>
+                        <div class="carousel-caption">Step 1:打开简谱图片</div>
                     </div>
                     <div class="item"> 
                         <img src="img/nav-img2.jpg"  alt="Second slide">
-                        <div class="carousel-caption">Step 1:打开简谱图片</div>
+                        <div class="carousel-caption">Step 2:设置简谱原调与转调，导出结果</div>
                     </div>
 
                     <div class="item"> 
                         <img src="img/nav-img3.jpg"  alt="Third slide">
-                        <div class="carousel-caption">Step 2:设置简谱原调与转调，导出结果</div>
+                        <div class="carousel-caption">软件界面</div>
                     </div>
 
                     <!-- <div class="item">
@@ -75,7 +75,7 @@
     <!-- 软件标题 -->
     <div class="row mid-Title">
         <div class="col-xs-12 "> 
-            <h1 class="text-center">简谱转调软件（易简谱Easy-Jianpu Trans）</h1>
+            <h1 class="text-center">简谱转调软件（Jianpu Easy Trans）</h1>
         </div>
     </div>
     <h1 id="howToUse"></h1>
@@ -89,7 +89,7 @@
             <div class="content-item">
                 <h2>说明</h2>
                 <div>
-                    <p>从网上下载的简谱的调性经常与我们的乐器的调性不同，这时就需要进行转调操作（能直接在脑海中完成转调的大神请忽略）。如半音口琴太多为C调，而从网上下载的简谱大多为非C调，这个时候就需要将简谱改为C调。虽然可根据乐理知识手动推算转换为我们想要的调性，但非常耗时且麻烦。网上搜索简谱转调软件未果，索性就自己编写了一个。</p>
+                    <p>从网上下载的简谱的调性经常与我们的乐器的调性不同，这时就需要进行转调（能直接在脑海中完成转调的大神请忽略）。如半音口琴太多为C调，而从网上下载的简谱大多为非C调，若想匹配背景旋律，需要将简谱转为C调。虽然可根据乐理知识转换为我们想要的调性，但手动转调非常耗时且麻烦。网上搜索简谱转调软件，需要手动一个一个地输入音符，仍较为耗时，且丢失了曲谱的节奏信息。索性就自己编写了一个。</p>
                     <div>
                         <ul>
                             <li>
@@ -128,7 +128,7 @@
                 <p>导入图片之后，工具栏中部分按钮变为可用状态</p>
                 <img width="600px" height="330px" src="img/software-toneSet.jpg"/>
                 <p>“原调”与“转调”设置好后，此时还不能导出转调后的结果 ，需要对原简谱进行识别。</p>
-                <p>点击绿色的“识别”按钮，对原简谱进行识别。</p>
+                <p>点击绿色的“识别”按钮，对原简谱进行识别（识别时间依根据图像大小而定，约2分钟内）。</p>
                 <img width="600px" height="330px" src="img/software-onreco.jpg"/>
 
                 <h3>4、转调后的简谱的导出</h3>
@@ -136,7 +136,10 @@
                 <img width="600px" height="330px" src="img/software-onsave.jpg"/>
                 <p>下图即为转调后的结果。</p>
                 <img src="img/chengdu-result.jpg"/>
-
+                <p>可以看到，转调后的简谱图片的最上方有转调的提示（原调D，转调C），如果觉得这样还不够，可以自行用window的"画图"软件修改，如下。修改完成后保存即可</p>
+                <img src="img/chengdu-result - draw.jpg"/>
+                <p>>------------------------------------------------------------------------<</p>
+                <p></p><p></p><p></p>
                 <h3>5、重要：错误识别的修改</h3>
                 <p>通过前面的步骤，进行转调时，<b>首先要进行图像中音符的识别</b>。</p>
                 <p><b>而识别的准确度，直接影响了转调后的简谱的正确性</b>。而目前任意一种图像识别算法都不可能做到 100 % 的准确。（上面的简谱转调的例子的识别结果完全正确， ^_^|||    ）</p>
@@ -145,17 +148,35 @@
                 <img width="600px" height="330px" src="img/software-onModi.jpg"/>
                 <p>这时将会弹出修正简谱界面，如下。每个音符的识别结果，将会在音符的正上方以红色字体显示。</p>
                 <img src="img/software-onModi-preview.jpg"/>
-                <p>注意到第二行的，高音1被错误识别为中音1，需要进行修正。</p>
-                <p>用鼠标左键点击识别错误的1（选中后，识别的音符将变为蓝色）。此时将弹出修改对话框，如下。</p>
+                <p>注意到第三行的，低音7被错误识别为中音7，需要进行修正。</p>
+                <p>用鼠标左键点击被识别错误的7（选中后，选中的7将有蓝色边框标识，同时识别的音符将变为蓝色）。此时将弹出修改对话框，如下。</p>
                 <img src="img/software-onModi-modi.jpg"/>
-                <p>在修改对框，在下拉框中将“中音”改为高音。然后点确定。即可修改完成，修改结果如下。</p>
+                <p>在修改对框，在下拉框中将“中音”改为“低音”。然后点确定。即可修改完成，修改结果如下。</p>
                 <img src="img/software-onModi-modiResult.jpg"/>
-                <p>另外，注意到第二行的“#5”旁边多出来一个中音“4”，需要将其删除。</p>
-                <p>鼠标左键选中这个“4”，在弹出的修改对话框中先中“删除”，然后点“确定”按钮。这个多出来的4就被删除了！右边多出来的4也可按照同样方法删除！</p>
+                <p>另外，注意到第二行的“4/4”是节拍号，并不是音符，需要将其删除。</p>
+                <p>鼠标左键选中上侧的“4”，在弹出的修改对话框中选中“删除”，然后点“确定”按钮。这个多出来的4就被删除了！下边“4”也可按照同样方法删除！</p>
                 <img src="img/software-onModi-del.jpg"/>
                 <p>删除后,结果如下</p>
                 <img src="img/software-onModi-del-result.jpg"/>
-                <p>这样修改完成，确定没有错误就可以将转调结果导出了（导出见步骤4）</p>
+                <p>按照这样的方法修改完成，确定没有错误就可以将转调结果导出了（导出见步骤4）</p>
+                <br/>
+
+                <p><b>等等</b>，要是有音符没有识别出来怎么办，或者音符被识删除了呢。虽然我暂时没有遇到，但程序还是考虑了这一情况。</p>
+                <p>如下图，在音符“识别”过程结束后，点击“修正”，发现有一个音符“1”没有识别出来。需要添加一个音符。</p>
+                <img src="img/software-onAdd-img.jpg">
+                <p>鼠标放到识别结果界面，按住"Shift"键，同时按下鼠标左键。此时，鼠标会变成“+”，同时在鼠标左上侧会出现一个蓝色矩形</p>
+                <img src="img/software-onAdd-img-mouse.jpg">
+                <p>按住“Shift”键和鼠标左键，拖动这个蓝框到音符“1”，使蓝框能框选住“1”</p>
+                <img src="img/software-onAdd-img-select.jpg">
+                <p>鼠标松开鼠标左键，将会弹出之前的“修改”对话框，可在此对话框中设置需要添加的音符信息</p>
+                <img src="img/software-onAdd-img-select-modi.jpg">
+                <p>设置好后，点击“确定”，即可完成音符添加操作，结果如下</p>
+                <img src="img/software-onAdd-img-modi-result.jpg">
+                <p>如对音符添加还不理解这里有一个视频<a href="video/Video_addNote_player.html" target="new">[Link]</a></p>
+                <p>>=============================================<</p>
+                <p><b>总结</b>：此软件首先需要正确识别简谱中的音符，由于音符识别不能做到<i>100 </i>%的准确。因此采用人工辅助复查的方式，以保证转调前的所有音符是正确的（音符<b>转调</b>过程完全交由系统自动完成）。</p>
+                <p>总体用下来，此软件还是挺便利的，平均一张简谱转调耗时不会超过5分钟（加上图像识别的时间）。</p>
+
             </div>
             <!--项目结束-->
 

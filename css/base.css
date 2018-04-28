@@ -62,8 +62,8 @@ background-image: linear-gradient(to right,rgba(0,0,0,.000000) 0,rgba(0,0,0,.000
 .content-item p{ line-height:35px; color:#1a1a1a;}
 .content-item div ul li{list-style-type:circle;}
 .content-item a{color: gray; font-size: 14px;}
-
-.donate-scanning img{display: inline;}
+.content-item img{width: 600px;}
+.donate-scanning img{display: inline; width: 300PX; height: 300px;}
 
 .content-right h6{ border:solid gray 1px; padding:1px; text-align:center; width:150px;}
 /*footer*/
