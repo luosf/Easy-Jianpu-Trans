@@ -64,6 +64,7 @@ background-image: linear-gradient(to right,rgba(0,0,0,.000000) 0,rgba(0,0,0,.000
 .content-item a{color: gray; font-size: 14px;}
 .content-item img{width: 600px;}
 .donate-scanning img{display: inline; width: 300PX; height: 300px;}
+.content-item ul li{text-decoration: dot; list-style-type: square;}
 
 .content-right h6{ border:solid gray 1px; padding:1px; text-align:center; width:150px;}
 /*footer*/
